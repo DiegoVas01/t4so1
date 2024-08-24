@@ -64,7 +64,7 @@ void Round_Robin(Proceso procesos[cant_procesos], int quantum){
 
 /* Función para el algoritmo SJF-Shortest Job First */
 void SJF(Proceso procesos[cant_procesos]){
-	printf("\nIniciando algoritmo SJF\n");
+	printf("\nIniciando simulación de SJF\n");
 	/* Ordenamiento de burbuja */
 	for (i=0; i<cant_procesos-1; i++) {
         for (j=0; j<cant_procesos-1; j++) {
@@ -88,6 +88,9 @@ void SJF(Proceso procesos[cant_procesos]){
 int main(){
 	/* Permite leer caracteres del español en la consola */
 	setlocale(LC_ALL, "spanish");
+	
+	/* COPYRIGHT EN PANTALLA */
+	printf("Derechos de Autor: Diego Vásquez / 9989-19-19543\n\n");
 	
 	printf("Ingrese la cantidad de procesos: ");
 	scanf("%i", &cant_procesos);
